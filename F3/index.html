@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate OTP</title>
+</head>
+
+<body>
+
+    <script>
+        function OTP() {
+            let OTP = Math.floor(Math.round(Math.random() * 7777777)) * Math.ceil(Math.round(Math.random() * Math.random() * 11000));
+            return 'MA-' + OTP;
+        }
+
+        let myOTP = OTP();
+        console.log("Here's your OTP: " + myOTP + "\nDo not share your OTP with anyone else.");
+    </script>
+
+</body>
+
+</html>
