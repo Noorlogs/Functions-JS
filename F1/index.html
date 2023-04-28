@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize First Letter</title>
+</head>
+
+<body>
+    <script>
+        let userInput = prompt('Enter', 'name');
+        // capitalizing initial letter and Lower Case other letters
+        let firstLetter = userInput.charAt(0).toUpperCase() + userInput.slice(1).toLowerCase();
+        console.log('Initial letter is capitalized of ' + firstLetter);
+    </script>
+
+</body>
+
+</html>
