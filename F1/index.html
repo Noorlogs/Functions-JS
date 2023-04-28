@@ -10,10 +10,16 @@
 
 <body>
     <script>
-        let userInput = prompt('Enter', 'name');
-        // capitalizing initial letter and Lower Case other letters
-        let firstLetter = userInput.charAt(0).toUpperCase() + userInput.slice(1).toLowerCase();
-        console.log('Initial letter is capitalized of ' + firstLetter);
+        function capitalLetter() {
+            // taking user input
+            let userInput = prompt('Enter', 'name');
+            // capitalizing initial letter and Lower Case other letters
+            let firstLetter = userInput.charAt(0).toUpperCase() + userInput.slice(1).toLowerCase();
+            console.log('Initial letter is capitalized of ' + firstLetter);
+        }
+        // calling function
+        capitalLetter();
+
     </script>
 
 </body>
