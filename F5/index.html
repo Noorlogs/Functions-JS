@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Leap year</title>
+</head>
+
+<body>
+    <script>
+        function leapYear() {
+            // user input lelo
+            // let userInput = Number(prompt('Enter current year:'))
+            // check karo leap year 
+            currentYear = new Date().getFullYear()
+
+            if (currentYear % 4 === 0 && currentYear % 400 === 0) {
+                return "Current year " + currentYear + " is a leap year"
+            }
+            else {
+                return "Current year " + currentYear + " is not a leap year"
+
+            }
+        }
+        let thisyear = leapYear()
+        console.log(thisyear)
+
+    </script>
+</body>
+
+</html>
