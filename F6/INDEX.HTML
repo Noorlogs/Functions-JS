@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>generate leap year for upcoming years</title>
 </head>
+
 <body>
-    
+    <script>
+        function comingLeapYear() {
+            let currentYear = new Date().getFullYear()
+
+            for (let i = currentYear; i <= currentYear + 10; i++) {
+                if (i % 4 === 0 && (i % 100 != 0 || i % 400 === 0)) {
+                    console.log('Current year ' + i + ' is a leap year')
+                }
+                else {
+                    console.log('Current year ' + i + ' is not a leap year')
+                }
+            }
+        }
+
+        comingLeapYear()
+    </script>
 </body>
+
 </html>
